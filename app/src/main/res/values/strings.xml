@@ -1,5 +1,35 @@
 <resources>
     <string name="app_name">Superhero Information</string>
-    <string name="searchSuperhero">Search Superhero...</string>
+    <string name="searchSuperhero">Search Superhero Or Villian...</string>
     <string name="serach">Search</string>
+    <string name="name">NAME</string>
+    <string name="powerstats">POWERSTATS</string>
+    <string name="intelligance">Intelligence</string>
+    <string name="strength">Strength</string>
+    <string name="speed">Speed</string>
+    <string name="durability">Durability</string>
+    <string name="power">Power</string>
+    <string name="combat">Combat</string>
+    <string name="appearance">Appearance</string>
+    <string name="gender">Gender</string>
+    <string name="race">Race</string>
+    <string name="height">Height</string>
+    <string name="weigth">Weight</string>
+   <string name="eyecolor">Eye Color</string>
+    <string name="haircolor">Hair Color</string>
+    <string name="biography">Biography</string>
+    <string name="fullname">Full Name</string>
+    <string name="alisase">Aliases</string>
+    <string name="placeofbirth">Place Of Birth</string>
+    <string name="firstAppearance">First Appearance</string>
+    <string name="publisher">Publisher</string>
+    <string name="work">Work</string>
+    <string name="occupation">Occupation</string>
+    <string name="base">Base</string>
+    <string name="connections">Connections</string>
+    <string name="groupaffiliation">Group Affiliation</string>
+    <string name="relative">Relatives</string>
+
+
+
 </resources>
