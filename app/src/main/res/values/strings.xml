@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Superhero Information</string>
+    <string name="searchSuperhero">Search Superhero...</string>
+    <string name="serach">Search</string>
+</resources>
