@@ -5,8 +5,12 @@
       <map>
         <entry key="..\:/Users/yashv/AndroidStudioProjects/SuperheroInformation/app/src/main/res/drawable/btnbackground.xml" value="0.144" />
         <entry key="..\:/Users/yashv/AndroidStudioProjects/SuperheroInformation/app/src/main/res/drawable/edittext_background.xml" value="0.144" />
+        <entry key="..\:/Users/yashv/AndroidStudioProjects/SuperheroInformation/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.168" />
         <entry key="..\:/Users/yashv/AndroidStudioProjects/SuperheroInformation/app/src/main/res/drawable/infolayout.xml" value="0.144" />
+        <entry key="..\:/Users/yashv/AndroidStudioProjects/SuperheroInformation/app/src/main/res/drawable/settingbtndesign.xml" value="0.168" />
         <entry key="..\:/Users/yashv/AndroidStudioProjects/SuperheroInformation/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/yashv/AndroidStudioProjects/SuperheroInformation/app/src/main/res/layout/activity_settings.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/yashv/AndroidStudioProjects/SuperheroInformation/app/src/main/res/menu/menu_main.xml" value="0.20863616930312098" />
       </map>
     </option>
   </component>

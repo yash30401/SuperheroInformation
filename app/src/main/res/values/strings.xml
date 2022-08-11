@@ -15,7 +15,7 @@
     <string name="race">Race</string>
     <string name="height">Height</string>
     <string name="weigth">Weight</string>
-   <string name="eyecolor">Eye Color</string>
+    <string name="eyecolor">Eye Color</string>
     <string name="haircolor">Hair Color</string>
     <string name="biography">Biography</string>
     <string name="fullname">Full Name</string>
@@ -30,6 +30,10 @@
     <string name="groupaffiliation">Group Affiliation</string>
     <string name="relative">Relatives</string>
 
-
+    <string name="nointernettext">No Internet Connection!</string>
+    <string name="howtouse">How To Use?</string>
+    <string name="rateapp">Rate App</string>
+    <string name="privacypolicy">Privacy Policy</string>
+    <string name="conatctUs">Contact Us</string>
 
 </resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    tools:context=".Settings">
+
+    <android.widget.Button
+
+        android:id="@+id/howtobtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/howtouse"
+        android:background="@drawable/settingbtndesign"
+        android:elevation="20dp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_help_outline_24"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:textAlignment="textStart"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+
+        android:id="@+id/rateappbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/settingbtndesign"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_baseline_star_rate_24"
+        android:drawablePadding="10dp"
+        android:elevation="20dp"
+        android:fontFamily="@font/poppins_light"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="10dp"
+
+        android:text="@string/rateapp"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/howtobtn" />
+
+
+    <android.widget.Button
+
+        android:id="@+id/conatctbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/settingbtndesign"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_baseline_mail_outline_24"
+        android:drawablePadding="10dp"
+        android:elevation="20dp"
+        android:fontFamily="@font/poppins_light"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="10dp"
+        android:text="@string/conatctUs"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rateappbtn" />
+
+    <android.widget.Button
+
+        android:id="@+id/policybtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/settingbtndesign"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_baseline_policy_24"
+        android:drawablePadding="10dp"
+        android:elevation="20dp"
+        android:fontFamily="@font/poppins_light"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="10dp"
+        android:text="@string/privacypolicy"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conatctbtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
