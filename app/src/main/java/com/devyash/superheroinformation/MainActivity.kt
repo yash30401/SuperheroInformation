@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
 
             val result= GlobalScope.async {
                 var superheroname=binding.superheroName.text.toString()
-                callAztroAPI("https://superhero-search.p.rapidapi.com/api/?hero=${superheroname}&rapidapi-key=3dff07b0f5msh40d4c6bb5e5815fp1fabfajsn77cdcf2e6982")
+                callAztroAPI("https://superhero-search.p.rapidapi.com/api/?hero=${superheroname}&rapidapi-key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 
             }.await()
 
