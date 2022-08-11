@@ -15,6 +15,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 import com.devyash.superheroinformation.databinding.ActivityMainBinding
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
@@ -73,7 +74,7 @@ class MainActivity : AppCompatActivity() {
 
             val result= GlobalScope.async {
                 var superheroname=binding.superheroName.text.toString()
-                callAztroAPI("https://superhero-search.p.rapidapi.com/api/?hero=${superheroname}&rapidapi-key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+                callAztroAPI("https://superhero-search.p.rapidapi.com/api/?hero=${superheroname}&rapidapi-key=3dff07b0f5msh40d4c6bb5e5815fp1fabfajsn77cdcf2e6982")
 
             }.await()
 
@@ -82,10 +83,11 @@ class MainActivity : AppCompatActivity() {
 
                 runOnUiThread {
                     binding.pBar.visibility = View.INVISIBLE
-                    binding.scrollbar.visibility = View.GONE
+                    binding.detailslayout.visibility = View.GONE
                     binding.NAME.visibility = View.INVISIBLE
                     binding.heroName.text = "Hero Not Found!!"
                     binding.namelay.visibility = View.VISIBLE
+                    binding.heroimage.visibility=View.GONE
                 }
             }else {
 
@@ -158,7 +160,7 @@ class MainActivity : AppCompatActivity() {
             } catch (e: Exception) {
                 e.printStackTrace()
                 binding.NAME.visibility = View.GONE
-                binding.scrollbar.visibility=View.GONE
+                binding.detailslayout.visibility=View.GONE
                 runOnUiThread{binding.heroName.text = "Oops!! something went wrong, please try again"}
 
             }
@@ -173,9 +175,12 @@ class MainActivity : AppCompatActivity() {
         var biography=value.getJSONObject("biography")
         var work=value.getJSONObject("work")
         var connections=value.getJSONObject("connections")
+        var images=value.getJSONObject("images")
+        var media=images["md"]
 
         runOnUiThread{
             binding.scrollbar.visibility=View.VISIBLE
+            binding.detailslayout.visibility=View.VISIBLE
 
             binding.NAME.visibility=View.VISIBLE
             binding.namelay.visibility=View.VISIBLE
@@ -203,6 +208,17 @@ class MainActivity : AppCompatActivity() {
             binding.basevalue.text=work["base"].toString()
             binding.groupaffvalue.text=connections["groupAffiliation"].toString()
             binding.relativevalue.text=connections["relatives"].toString()
+
+            if (media !== null) {
+
+                Glide.with(this)
+                    .load(media)
+                    .into(binding.heroimage)
+            } else {
+                binding.heroimage.visibility=View.GONE
+            }
+
+            binding.heroimage.visibility=View.VISIBLE
         }
 
     }
